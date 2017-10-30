@@ -1,7 +1,7 @@
 {
   "name": "css-module-resolver",
-  "version": "0.0.2",
-  "description": "To use multiple class names for react css module",
+  "version": "0.0.3",
+  "description": "This package serves smarter way to use multiple classNames for react css module.",
   "main": "index.js",
   "scripts": {
     

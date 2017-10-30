@@ -1,6 +1,12 @@
 # css-module-resolver
 
-This package serves smarter way to use multiple class names for react css module.
+This package serves smarter way to use multiple classNames for react css module.
+
+## Installation
+
+``` sh
+npm install css-module-resolver
+```
 
 ## Without css-module-resolver
 
@@ -12,16 +18,23 @@ import styles from "./style.css";
 class MyComponent extends React.Component {
   render() {
     return (
-      <h1 className={styles.heading + " " + styles.bold}>
-        Hello
-      </h1>
+      <div>
+        <h1 className={styles.heading + " " + styles.bold}>
+          Hello
+        </h1>
 
-      <p className={`${styles.row} ${styles.italic}`}>
-        World
-      </p>
+        <p className={`${styles.row} ${styles.italic}`}>
+          World
+        </p>
+      </div>
     );
   }
 }
+
+ReactDOM.render(
+    <MyComponent />,
+    document.getElementById("app")
+);
 ```
 
 ## With css-module-resolver
@@ -37,20 +50,21 @@ const cr = cssResolver(styles);
 class MyComponent extends React.Component {
   render() {
     return (
-      <h1 className={cr("heading", "styles.bold")}>
-        Hello
-      </h1>
+      <div>
+        <h1 className={cr("heading", "bold")}>
+          Hello
+        </h1>
 
-      <p className={cr("styles.row", "styles.italic"}>
-        World
-      </p>
+        <p className={cr("row", "italic")}>
+          World
+        </p>
+      </div>
     );
   }
 }
-```
 
-## Installation
-
-``` sh
-npm install css-module-resolver
+ReactDOM.render(
+    <MyComponent />,
+    document.getElementById("app")
+);
 ```
