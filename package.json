@@ -1,0 +1,19 @@
+{
+  "name": "css-module-resolver",
+  "version": "0.0.1",
+  "description": "To use multiple class names for react css module",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KazmaArakaki/css-module-resolver.git"
+  },
+  "author": "Kazma Arakaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KazmaArakaki/css-module-resolver/issues"
+  },
+  "homepage": "https://github.com/KazmaArakaki/css-module-resolver#readme"
+}
